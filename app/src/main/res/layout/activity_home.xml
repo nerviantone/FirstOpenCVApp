@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <Button
+        android:id="@+id/bMean"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="Mean Blur"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/GAUSSIAN_BLUR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="GAUSSIAN BLUR"
+        app:layout_constraintStart_toStartOf="@+id/bMean"
+        app:layout_constraintTop_toBottomOf="@+id/bMean" />
+
+    <Button
+        android:id="@+id/MEDIAN_BLUR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:text="MEDIAN BLUR"
+        app:layout_constraintStart_toStartOf="@+id/GAUSSIAN_BLUR"
+        app:layout_constraintTop_toBottomOf="@+id/GAUSSIAN_BLUR" />
+
+    <Button
+        android:id="@+id/SHARPEN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="SHARPEN"
+        app:layout_constraintStart_toStartOf="@+id/MEDIAN_BLUR"
+        app:layout_constraintTop_toBottomOf="@+id/MEDIAN_BLUR" />
+
+    <Button
+        android:id="@+id/DILATE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="DILATE"
+        app:layout_constraintStart_toStartOf="@+id/SHARPEN"
+        app:layout_constraintTop_toBottomOf="@+id/SHARPEN" />
+
+    <Button
+        android:id="@+id/ERODE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="ERODE"
+        app:layout_constraintStart_toStartOf="@+id/DILATE"
+        app:layout_constraintTop_toBottomOf="@+id/DILATE" />
+
+    <Button
+        android:id="@+id/THRESHOLD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="THRESHOLD"
+        app:layout_constraintStart_toStartOf="@+id/ERODE"
+        app:layout_constraintTop_toBottomOf="@+id/ERODE" />
+
+    <Button
+        android:id="@+id/ADAPTIVE_THRESHOLD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="ADAPTIVE THRESHOLD"
+        app:layout_constraintStart_toStartOf="@+id/THRESHOLD"
+        app:layout_constraintTop_toBottomOf="@+id/THRESHOLD" />
+</androidx.constraintlayout.widget.ConstraintLayout>
